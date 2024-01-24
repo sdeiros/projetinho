@@ -34,9 +34,30 @@ p {
     text-align: center;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.story_input{
+    margin: auto;
+    width: 35%;
+    text-align: center;
+    margin-top: 20%;
+   
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 40%;
+    font-size: 22px;
 }
 
 svg {
