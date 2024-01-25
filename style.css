@@ -56,7 +56,7 @@ textarea {
     border-radius: 0.4rem;
     border: 2px solid #393939;
     height: 10em;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Playfair Display';
     font-weight: 400;
     color: #393939;
@@ -81,7 +81,7 @@ textarea {
     position: absolute;
     width: 16%;
     height: auto;
-    top: 50vh;
+    top: 48vh;
     transform: rotate(-15.809deg);
 }
 
