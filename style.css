@@ -2,23 +2,21 @@ body {
     margin: 0;
     padding: 0;
     background: #F7F7F7;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 nav {
-    top: 2rem;
     border-bottom: 2px solid #393939;
 }
 
 .logo {
-    position: relative;
     color: #393939;
     font-family: "Romana BT";
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    left: 3rem;
+    margin-left: 2rem;
     bottom: -1.5rem;
     cursor: pointer;
 }
@@ -39,25 +37,52 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.story_input{
+.story_input {
     margin: auto;
-    width: 35%;
+    width: 50%;
     text-align: center;
-    margin-top: 20%;
-   
+    margin-top: 14%;
 }
 
-label{
+label {
     display: block;
     margin-bottom: 10px;
 }
 
-textarea{
+textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    height: 40%;
+    border-radius: 0.4rem;
+    border: 2px solid #393939;
+    height: 10em;
     font-size: 22px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    color: #393939;
+    transition: all 0.3s ease;
+    max-width: none;
+    resize: none;
+    overflow: auto;
+    background-image: repeating-linear-gradient(transparent, transparent 20px, #ddd 20px, #ddd 21px, transparent 21px);
+    background-color: #F7F7F7;
+    background-size: 100% 50px;
+}
+
+.pena {
+    position: absolute;
+    left: 86%;
+    top: 12vh;
+    width: 12%;
+    height: auto;
+}
+
+.caveira {
+    position: absolute;
+    width: 16%;
+    height: auto;
+    top: 50vh;
+    transform: rotate(-15.809deg);
 }
 
 svg {
@@ -71,9 +96,112 @@ path {
     height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+        width: 22em;
+    }
+
+    .story_input {
+        margin-top: 16rem;
+    }
+
+    textarea {
+        font-size: 20px;
+    }
+
+    .pena {
+        width: 13%;
+        left: 84%;
+        top: 11vh;
+    }
+
+    .caveira {
+        width: 18%;
+        top: 48vh;
+    }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1199px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        width: 20em;
+    }
+
+    .story_input {
+        margin-top: 22%;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+    .pena {
+        width: 12%;
+        left: 83%;
+        top: 12vh;
+    }
+
+    .caveira {
+        width: 16%;
+        top: 50vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 3.5rem;
+        width: 25em;
+    }
+
+    .story_input {
+        margin-top: 16%;
+    }
+
+    textarea {
+        font-size: 24px;
+    
+    }
+
+    .pena {
+        width: 15%;
+        left: 85%;
+        top: 10vh;
+    }
+
+    .caveira {
+        width: 20%;
+        top: 45vh;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1024px) {
     path {
-        height: 150vh; 
+        height: 150vh;
     }
 
     .logo {
@@ -86,11 +214,46 @@ path {
         font-size: 2rem;
         width: 90%;
     }
+
+    .story_input {
+        width: 80%;
+        margin-top: 25%;
+    }
+
+    .pena, .caveira {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 480px) {
+    path {
+        height: 150vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+        left: 4rem;
+        bottom: -1rem;
+    }
+
+    p {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .story_input {
+        width: 80%;
+        margin-top: 16rem;
+    }
+
+    .pena, .caveira {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
     path {
-        height: 200vh; /* Adjust height for even smaller screens */
+        height: 200vh;
     }
 
     .logo {
@@ -102,6 +265,15 @@ path {
     p {
         font-size: 1.5rem;
         width: 90%;
+    }
+
+    .story_input {
+        width: 80%;
+        margin-top: 17rem;
+    }
+
+    .pena, .caveira {
+        display: none;
     }
 }
 
