@@ -49,6 +49,18 @@ label {
     margin-bottom: 10px;
 }
 
+.info {
+    position: absolute;
+    color: #333;
+    font-family: "Gideon Roman";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 2%;
+    bottom: 4vh;
+}
+
 textarea {
     width: 100%;
     padding: 10px;
@@ -298,14 +310,3 @@ span {
     color: #F7F7F7;
 }
 
-.info {
-    position: absolute;
-    color: #333;
-    font-family: "Gideon Roman";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 2%;
-    bottom: 4vh;
-}

@@ -14,6 +14,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/apple-touch-icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <title>DR - HISTÓRIAS</title>
 </head>
 
@@ -44,8 +61,10 @@
     </defs>
   </svg>
 
-  <h3>Casa do Neves</h3>
-  <h3 id="horarioData"></h3>
+  <div class="info">
+    <h3>casa do neves</h3>
+    <h3 id="horarioData"></h3>
+  </div>
 
   <script>
     // Função para obter o horário de Brasília
@@ -68,9 +87,17 @@
       return `${dia}/${mes}/${ano} - ${hora}:${minutos}`;
     }
 
-    // Exibir o horário de Brasília e a data abaixo do primeiro h3
-    const horarioDataElemento = document.getElementById('horarioData');
-    horarioDataElemento.textContent = formatarDataHora();
+    // Função para atualizar o horário a cada minuto
+    function atualizarHorario() {
+      const horarioDataElemento = document.getElementById('horarioData');
+      horarioDataElemento.textContent = formatarDataHora();
+    }
+
+    // Atualizar a cada minuto (60 * 1000 milissegundos)
+    setInterval(atualizarHorario, 60 * 1000);
+
+    // Atualizar imediatamente ao carregar a página
+    atualizarHorario();
   </script>
 
 </body>
