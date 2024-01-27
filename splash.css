@@ -1,31 +1,15 @@
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
     background: #282828;
-    overflow-x: hidden; 
-}
-
-nav {
-    top: 2rem;
-    border-bottom: 2px solid #F7F7F7;
-}
-
-.logo {
-    position: relative;
-    color: #F7F7F7;
-    font-family: "Romana BT";
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    left: 3rem;
-    bottom: -1.5rem;
-    cursor: pointer;
 }
 
 p {
     color: #F7F7F7;
-    font-family: "Romana BT";
+    font-family: "Romana";
     font-size: 3rem;
     white-space: nowrap;
     overflow: hidden;
@@ -38,19 +22,6 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    p {
-        font-size: 2rem;
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    p {
-        font-size: 1.5rem;
-    }
 }
 
 @keyframes type {
@@ -66,7 +37,7 @@ span {
 
 @keyframes blink {
     to {
-        opacity: 0;
+        opacity: .0;
     }
 }
 
@@ -75,3 +46,4 @@ span {
     color: #F7F7F7; 
     cursor: pointer;
 }
+

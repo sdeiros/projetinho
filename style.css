@@ -184,7 +184,7 @@ path {
 
     textarea {
         font-size: 24px;
-    
+
     }
 
     .pena {
@@ -296,4 +296,16 @@ span {
 ::selection {
     background-color: #808080;
     color: #F7F7F7;
+}
+
+.info {
+    position: absolute;
+    color: #333;
+    font-family: "Gideon Roman";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 2%;
+    bottom: 4vh;
 }
